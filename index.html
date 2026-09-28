@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Quitok guarda tus datos solo en tu iPhone. Qué guarda, qué puedes exportar y cómo borrarlo.">
+  <meta name="description" content="Qué guarda Quitok en tu iPhone, qué datos usan los grupos opcionales y cómo puedes borrarlos.">
   <link rel="icon" href="data:,">
   <title>Privacidad · Quitok</title>
   <style>
@@ -51,7 +51,7 @@
     <h2>Qué se guarda en tu iPhone</h2>
     <ul>
       <li><strong>Tu perfil:</strong> el apodo que elijas (no hace falta tu nombre completo), el modo, tu compañero y su nombre, tu objetivo diario y una estimación de uso.</li>
-      <li><strong>La edad, si la escribes:</strong> es opcional y no limita ninguna función.</li>
+      <li><strong>La edad de tu perfil, si la escribes:</strong> es opcional. Para crear una cuenta de grupos se piden, por separado, mes y año de nacimiento y se exige tener al menos 14 años.</li>
       <li><strong>Tu actividad en la app:</strong> diario, sesiones de respiración y de concentración, libros, jardín, horario de noche, puntos, accesorios, planes del chat y la conversación con tu compañero.</li>
       <li><strong>Tiempo de uso:</strong> con tu permiso, iOS guarda qué apps has elegido mediante identificadores protegidos; Quitok no ve sus nombres. Quitok recibe avisos cuando el uso llega a ciertos umbrales, para aplicar las pausas y calcular tus puntos. Es una estimación en pasos de 5 minutos, no un registro de cada apertura.</li>
       <li><strong>Informe de uso de todas tus apps:</strong> lo muestra una extensión de Apple dentro de la app y no sale de ella.</li>
@@ -77,29 +77,32 @@
     <h2>Grupos de amigos (opcional)</h2>
     <p>Si creas una cuenta para competir en grupos, el servidor de Quitok (Supabase, en la Unión Europea) guarda:</p>
     <ul>
-      <li><strong>Tu cuenta:</strong> email y contraseña (cifrada por el servicio de autenticación), nombre de usuario y mes y año de nacimiento, solo para comprobar que tienes 14 años o más.</li>
+      <li><strong>Tu cuenta:</strong> email, identificador de cuenta y nombre de usuario. Si eliges registrarte con contraseña, el servicio de autenticación protege tus datos de acceso. También guardamos mes y año de nacimiento para comprobar que tienes 14 años o más.</li>
+      <li><strong>Acceso con Google o Apple:</strong> el proveedor confirma tu identidad y tu correo. Si accedes con Google, Supabase puede conservar también tu nombre y una referencia a tu foto de perfil como parte de los datos de autenticación. Estos datos no sustituyen el nombre de usuario y el avatar que muestras al grupo. El acceso nativo con Apple solicita tu correo y permite usar la opción de ocultarlo.</li>
       <li><strong>Cómo apareces:</strong> tu compañero con su fase y accesorio, o tu paisaje si usas Quitok sin mascota.</li>
+      <li><strong>Tus grupos:</strong> a cuáles perteneces, tu rol y qué usuarios has bloqueado. No accedemos a la agenda de contactos de tu iPhone.</li>
       <li><strong>Minutos por día</strong> de lo que mide cada grupo (todo el móvil o las categorías acordadas) y los resultados semanales. Nunca qué apps usas: iOS no se lo muestra a Quitok.</li>
       <li><strong>Lo que escribes en el grupo:</strong> mensajes del chat (solo texto, se borran a los 30 días), propuestas de pacto y tus respuestas.</li>
-      <li><strong>Avisos:</strong> el identificador de notificaciones de tu iPhone y tus horas de descanso (noche y concentración), para no avisarte en esos momentos.</li>
+      <li><strong>Avisos:</strong> el identificador de notificaciones de tu iPhone, tu idioma, tu zona horaria y tus horas de descanso (noche y concentración), para enviar los avisos en el idioma y horario adecuados.</li>
       <li><strong>Seguridad:</strong> denuncias y bloqueos. Las denuncias las revisa el responsable en menos de 24 horas y pueden terminar en ocultar un mensaje, expulsar de un grupo o suspender una cuenta.</li>
     </ul>
     <p>Solo los miembros de tu grupo ven tu nombre de usuario, tu avatar, tus minutos y tus mensajes. No hay grupos públicos, buscador ni mensajes privados. Se entra solo con un código de invitación.</p>
-    <p>Puedes salir de un grupo en cualquier momento y <strong>borrar tu cuenta</strong> desde Ajustes › Grupos: se eliminan del servidor tu perfil, tus minutos, tus mensajes y tus pactos. La base legal es el consentimiento que das al crear la cuenta; puedes retirarlo borrándola.</p>
+    <p>Puedes salir de un grupo en cualquier momento y <strong>borrar tu cuenta</strong> desde Ajustes › Grupos: se eliminan del servidor tu cuenta, tu perfil, tus minutos, tus mensajes, tus propuestas y tus respuestas. Los pactos ya compartidos y los registros de moderación pueden permanecer sin referencia al identificador de la cuenta borrada. La base legal es el consentimiento que das al crear la cuenta; puedes retirarlo borrándola.</p>
   </section>
   <section id="control">
     <h2>Tus opciones</h2>
     <p><strong>Ajustes › Volver a empezar</strong> borra, con confirmación en dos pasos, el perfil, el historial y las preferencias de Quitok, y detiene la protección, los recordatorios y las actividades en directo. Los créditos comprados para cambiar de compañero se conservan en el llavero de este dispositivo. Al borrar la app se eliminan sus datos de uso; los datos del llavero pueden permanecer en el dispositivo.</p>
+    <p>Volver a empezar o borrar la app no elimina tu cuenta de grupos del servidor. Para borrarla, usa Ajustes › Grupos › Borrar cuenta.</p>
     <p>Puedes retirar los permisos de Tiempo de uso y de notificaciones en Ajustes de iOS en cualquier momento.</p>
     <p>Fuera de los grupos, Quitok no recibe tus datos, así que no puede consultarlos ni borrarlos por ti: están solo en tu dispositivo. Para los datos de los grupos puedes pedir acceso, rectificación o borrado al contacto indicado arriba, o borrar la cuenta tú mismo. Si tienes dudas, escribe al contacto. En España puedes reclamar ante la <a href="https://www.aepd.es/">Agencia Española de Protección de Datos</a>.</p>
   </section>
   <section id="menores">
     <h2>Edad</h2>
-    <p>La edad es opcional para usar Quitok y no cambia sus funciones. Los grupos de amigos piden mes y año de nacimiento y solo están disponibles a partir de 14 años, la edad a la que en España se puede consentir el tratamiento de los propios datos. La clasificación de la App Store y los controles de Tiempo de uso de Apple no sustituyen el acompañamiento de las familias.</p>
+    <p>La edad del perfil local es opcional. Los grupos de amigos piden mes y año de nacimiento y solo están disponibles a partir de 14 años, la edad a la que en España se puede consentir el tratamiento de los propios datos. La clasificación de la App Store y los controles de Tiempo de uso de Apple no sustituyen el acompañamiento de las familias.</p>
   </section>
   <section id="cambios">
     <h2>Si cambia esta política</h2>
-    <p>Publicaremos la nueva versión con su fecha. Si una versión futura envía datos fuera del iPhone, lo explicará aquí y pedirá tu permiso antes.</p>
+    <p>Publicaremos la nueva versión con su fecha. Si cambia qué datos se envían fuera del iPhone o para qué se usan, lo explicaremos aquí y pediremos el permiso que corresponda.</p>
   </section>
 </main>
 <footer>Quitok · Una app para recuperar tiempo. Esta página no usa cookies, analítica ni recursos de terceros. El servicio donde se aloje puede guardar sus propios registros técnicos.</footer>
