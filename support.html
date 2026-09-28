@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Ayuda de Quitok: permisos de Tiempo de uso, avisos, acceso a tu cuenta, grupos y borrado de datos.">
+  <link rel="icon" href="data:,">
+  <title>Ayuda · Quitok</title>
+  <style>
+    :root { --bg:#f6f4ed; --card:#fffef9; --ink:#26352e; --muted:#57655c; --line:#dce3d9; --accent:#315c47; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:1rem/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    header,main,footer { width:min(100% - 2.5rem,52rem); margin-inline:auto; }
+    header { padding:4.5rem 0 2rem; }
+    .brand { color:var(--accent); letter-spacing:.14em; text-transform:uppercase; font-size:.85rem; font-weight:750; }
+    h1 { margin:.5rem 0 1rem; font-size:clamp(2.3rem,7vw,3.7rem); line-height:1.1; letter-spacing:-.045em; }
+    .intro { font-size:1.15rem; max-width:42rem; color:var(--muted); }
+    .date { font-size:.88rem; color:var(--muted); }
+    nav { margin:1.5rem 0; display:flex; flex-wrap:wrap; gap:.5rem 1rem; }
+    a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:3px; }
+    section { margin:0 0 1rem; padding:1.5rem 1.75rem; border:1px solid var(--line); border-radius:1.25rem; background:var(--card); }
+    h2 { margin:0 0 .65rem; font-size:1.4rem; line-height:1.3; letter-spacing:-.02em; }
+    h3 { font-size:1.05rem; margin:1.1rem 0 .4rem; }
+    p { margin:.65rem 0; }
+    ul,ol { padding-left:1.3rem; }
+    li { margin:.4rem 0; }
+    .contact { font-size:1.1rem; font-weight:650; }
+    .note { color:var(--muted); font-size:.94rem; }
+    footer { padding:1.5rem 0 3rem; color:var(--muted); font-size:.88rem; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#14201b; --card:#1c2b23; --ink:#edf0e9; --muted:#b7c4b9; --line:#344a3c; --accent:#b3dbb4; } }
+    @media(max-width:540px) { header { padding-top:2.5rem; } section { padding:1.25rem; } }
+    @media print { body { background:white; color:black; } section { break-inside:avoid; border:0; padding:0; } nav { display:none; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">Quitok</div>
+  <h1>Ayuda con Quitok.</h1>
+  <p class="intro">Aquí encontrarás los pasos para resolver los problemas más habituales. Si necesitas ayuda, escríbenos.</p>
+  <p class="contact"><a href="mailto:quitokcompany@gmail.com">quitokcompany@gmail.com</a></p>
+  <p class="date">Actualizado el 28 de septiembre de 2026</p>
+  <nav aria-label="Temas de ayuda">
+    <a href="#tiempo-de-uso">Tiempo de uso</a>
+    <a href="#avisos">Avisos</a>
+    <a href="#cuenta">Tu cuenta</a>
+    <a href="#grupos">Grupos</a>
+    <a href="#borrado">Borrar datos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+  <section id="tiempo-de-uso">
+    <h2>La protección no actúa sobre mis apps</h2>
+    <ol>
+      <li>Abre <strong>Ajustes dentro de Quitok</strong> y comprueba si aparece «Tiempo de uso autorizado».</li>
+      <li>Si falta el permiso, pulsa <strong>Autorizar y elegir apps</strong> y completa la autorización de iOS.</li>
+      <li>Elige las apps o categorías que quieres proteger. Si ya tienes permiso, puedes revisarlas con <strong>Cambiar apps seleccionadas</strong>.</li>
+      <li>Comprueba que la protección esté activada. Las pausas y los pases dependen de tu fase actual.</li>
+    </ol>
+    <p>Si iOS rechaza el permiso, revisa Tiempo de uso en los ajustes del iPhone y vuelve a intentarlo desde Quitok. Si sigue fallando, envíanos el mensaje de error que aparece.</p>
+    <p class="note">Quitok recibe de iOS avisos de uso acumulado. El tiempo puede actualizarse por intervalos; no es un contador de cada apertura.</p>
+  </section>
+  <section id="avisos">
+    <h2>No recibo avisos</h2>
+    <ol>
+      <li>En <strong>Ajustes de Quitok</strong>, activa <strong>Recibir recordatorios</strong> y acepta el permiso de iOS.</li>
+      <li>Revisa el estado que aparece debajo. Si iOS ha denegado el permiso o no hay banners, abre los ajustes del iPhone desde el botón que muestra Quitok y permite sus notificaciones.</li>
+      <li>Pulsa <strong>Enviar aviso de prueba</strong> y sal de Quitok. La prueba se programa para cinco segundos después.</li>
+    </ol>
+    <p>Los modos de concentración y el resumen de notificaciones del iPhone pueden silenciar o retrasar los avisos. Revisa también esas opciones si la prueba no aparece.</p>
+    <p>Que llegue la prueba confirma que pueden mostrarse notificaciones. El aviso por uso necesita además la protección activa, las apps seleccionadas y que iOS confirme el tiempo necesario. Los avisos de grupos necesitan conexión a internet y pueden respetar tus horas de noche o concentración.</p>
+  </section>
+  <section id="cuenta">
+    <h2>Registro y acceso a tu cuenta</h2>
+    <p>La cuenta se usa para los grupos de amigos. Puedes usar el resto de Quitok sin crearla.</p>
+    <h3>No encuentro el correo de confirmación</h3>
+    <ol>
+      <li>Comprueba que el correo esté bien escrito y revisa la carpeta de spam o correo no deseado.</li>
+      <li>En la pantalla de registro, pulsa <strong>Volver a enviar el correo</strong>.</li>
+      <li>Abre el enlace del correo más reciente. Después vuelve a Quitok y pulsa <strong>Entrar</strong>.</li>
+    </ol>
+    <p>Si Quitok muestra que no puede enviar correos a esa dirección, puedes probar el acceso con Apple o Google, o escribirnos indicando el error.</p>
+    <h3>Entrar con Apple o Google</h3>
+    <p>Pulsa <strong>Continuar con Apple</strong> o <strong>Continuar con Google</strong> y completa el acceso del proveedor. Para volver a tu cuenta, utiliza el mismo método que elegiste al crearla. Con Apple puedes ocultar tu correo.</p>
+    <h3>He olvidado la contraseña</h3>
+    <p>En la pantalla de acceso, escribe tu correo y pulsa <strong>He olvidado la contraseña</strong>. Solicita el cambio y abre el enlace desde el mismo iPhone. Si el enlace ha caducado o no sirve en ese dispositivo, pide otro desde Quitok. Si accedes con Apple o Google, utiliza el botón de ese proveedor.</p>
+  </section>
+  <section id="grupos">
+    <h2>Entrar en un grupo</h2>
+    <p>Los grupos son privados: necesitas el código de invitación de alguien que pertenezca al grupo. Comprueba el código si no puedes entrar y asegúrate de haber terminado de crear tu perfil.</p>
+    <p>Para usar grupos se piden mes y año de nacimiento y hay que tener al menos 14 años. Los minutos que se comparten son agregados y pueden tardar en actualizarse; no se muestran los nombres de las apps que utilizas.</p>
+    <p>Si encuentras un mensaje inapropiado, usa las opciones de denuncia o bloqueo del chat. También puedes escribirnos si necesitas ayuda con un grupo.</p>
+  </section>
+  <section id="borrado">
+    <h2>Borrar tu cuenta o los datos del iPhone</h2>
+    <h3>Cuenta de grupos</h3>
+    <p>En Quitok, abre <strong>Ajustes › Grupos › Borrar mi cuenta</strong> y confirma la acción. Saldrás de tus grupos y se borrarán del servidor la cuenta y sus datos asociados, con el detalle indicado en la <a href="index.html#grupos">política de privacidad</a>. Tu perfil local de Quitok no cambia.</p>
+    <h3>Datos guardados en el iPhone</h3>
+    <p><strong>Ajustes › Volver a empezar</strong> borra el perfil, el historial y las preferencias locales y detiene la protección. Los créditos comprados para cambiar de compañero se conservan en el llavero del dispositivo.</p>
+    <p>Volver a empezar o desinstalar la app no borra la cuenta de grupos del servidor. Si quieres borrar ambos, elimina primero la cuenta de grupos y después los datos locales.</p>
+  </section>
+  <section id="contacto">
+    <h2>Cuéntanos qué ocurre</h2>
+    <p>Escribe a <a href="mailto:quitokcompany@gmail.com">quitokcompany@gmail.com</a> e indica qué intentabas hacer, qué ocurrió y, si puedes, la versión de Quitok y de iOS. Una captura del error puede ayudar. No incluyas contraseñas ni códigos de acceso.</p>
+    <p>Si el problema es con la protección, puedes adjuntar el <strong>Informe de diagnóstico</strong> desde Ajustes de Quitok. Revisa lo que compartes antes de enviarlo.</p>
+    <p>Para conocer qué datos se guardan y cómo ejercer tus opciones, consulta la <a href="index.html">política de privacidad</a>.</p>
+  </section>
+</main>
+<footer>Quitok · <a href="index.html">Privacidad</a> · <a href="mailto:quitokcompany@gmail.com">Contacto</a></footer>
+</body>
+</html>
