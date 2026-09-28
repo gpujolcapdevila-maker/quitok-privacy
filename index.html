@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Quitok guarda tus datos solo en tu iPhone. Qué guarda, qué puedes exportar y cómo borrarlo.">
+  <link rel="icon" href="data:,">
+  <title>Privacidad · Quitok</title>
+  <style>
+    :root { --bg:#f6f4ed; --card:#fffef9; --ink:#26352e; --muted:#57655c; --line:#dce3d9; --accent:#315c47; --notice:#fff1ce; --notice-ink:#634512; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:1rem/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    header,main,footer { width:min(100% - 2.5rem,52rem); margin-inline:auto; }
+    header { padding:4.5rem 0 2rem; }
+    .brand { color:var(--accent); letter-spacing:.14em; text-transform:uppercase; font-size:.85rem; font-weight:750; }
+    h1 { margin:.5rem 0 1rem; font-size:clamp(2.3rem,7vw,3.7rem); line-height:1.1; letter-spacing:-.045em; }
+    .intro { font-size:1.15rem; max-width:42rem; color:var(--muted); }
+    .date { font-size:.88rem; color:var(--muted); }
+    nav { margin:1.5rem 0; display:flex; flex-wrap:wrap; gap:.5rem 1rem; }
+    a { color:var(--accent); text-underline-offset:.2em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:3px; }
+    section { margin:0 0 1rem; padding:1.5rem 1.75rem; border:1px solid var(--line); border-radius:1.25rem; background:var(--card); }
+    h2 { margin:0 0 .65rem; font-size:1.4rem; line-height:1.3; letter-spacing:-.02em; }
+    h3 { font-size:1.05rem; margin:1.1rem 0 .4rem; }
+    p { margin:.65rem 0; } ul { padding-left:1.3rem; } li { margin:.3rem 0; }
+    .notice { background:var(--notice); color:var(--notice-ink); border-radius:1rem; padding:1.1rem 1.4rem; margin:1.5rem 0; }
+    .placeholder { font-weight:650; overflow-wrap:anywhere; }
+    dt { font-weight:650; margin-top:.75rem; } dd { margin-left:0; color:var(--muted); }
+    footer { padding:1.5rem 0 3rem; color:var(--muted); font-size:.88rem; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#14201b; --card:#1c2b23; --ink:#edf0e9; --muted:#b7c4b9; --line:#344a3c; --accent:#b3dbb4; --notice:#3c301b; --notice-ink:#f3dab0; } }
+    @media(max-width:540px) { header { padding-top:2.5rem; } section { padding:1.25rem; } }
+    @media print { body { background:white; color:black; } section { break-inside:avoid; border:0; padding:0; } nav { display:none; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">Quitok</div>
+  <h1>Tu tiempo.<br>Tus datos.</h1>
+  <p class="intro">Quitok te ayuda a hacer pausas y recuperar tiempo para lo que te importa. Casi todo lo que guarda se queda en tu iPhone. Solo los grupos de amigos, que son opcionales y necesitan una cuenta, usan un servidor. No hay anuncios ni seguimiento.</p>
+  <p class="date">Política de privacidad · Versión del 28 de septiembre de 2026 · Quitok 3.0</p>
+  <nav aria-label="Contenido"><a href="#responsable">Responsable</a><a href="#datos">Qué se guarda</a><a href="#chat">Chat</a><a href="#compartir">Qué puedes compartir</a><a href="#grupos">Grupos</a><a href="#control">Tus opciones</a><a href="#menores">Edad</a></nav>
+</header>
+<main>
+  <section id="responsable">
+    <h2>Quién es responsable</h2>
+    <dl><dt>Responsable de Quitok</dt><dd>Germán Pujol López, Cabrils (Barcelona, España)</dd><dt>Contacto de privacidad</dt><dd><a href="mailto:quitokcompany@gmail.com">quitokcompany@gmail.com</a></dd></dl>
+    <p>Si no usas los grupos, Quitok no envía tus datos a ningún servidor, así que el responsable no recibe ni guarda información sobre ti. Si creas una cuenta de grupos, el responsable trata los datos que se explican en <a href="#grupos">Grupos</a>, guardados en Supabase (Unión Europea), que actúa como encargado del tratamiento; los avisos llegan a través del servicio de notificaciones de Apple. Apple y los servicios donde decidas guardar una copia tienen sus propias condiciones de privacidad.</p>
+  </section>
+  <section id="datos">
+    <h2>Qué se guarda en tu iPhone</h2>
+    <ul>
+      <li><strong>Tu perfil:</strong> el apodo que elijas (no hace falta tu nombre completo), el modo, tu compañero y su nombre, tu objetivo diario y una estimación de uso.</li>
+      <li><strong>La edad, si la escribes:</strong> es opcional y no limita ninguna función.</li>
+      <li><strong>Tu actividad en la app:</strong> diario, sesiones de respiración y de concentración, libros, jardín, horario de noche, puntos, accesorios, planes del chat y la conversación con tu compañero.</li>
+      <li><strong>Tiempo de uso:</strong> con tu permiso, iOS guarda qué apps has elegido mediante identificadores protegidos; Quitok no ve sus nombres. Quitok recibe avisos cuando el uso llega a ciertos umbrales, para aplicar las pausas y calcular tus puntos. Es una estimación en pasos de 5 minutos, no un registro de cada apertura.</li>
+      <li><strong>Informe de uso de todas tus apps:</strong> lo muestra una extensión de Apple dentro de la app y no sale de ella.</li>
+      <li><strong>Diagnóstico:</strong> un registro breve de lo que hace la protección (sin nombres de apps), para entender un fallo.</li>
+      <li><strong>Créditos comprados:</strong> el saldo de cambios de compañero y los identificadores de transacciones verificadas se guardan en el llavero del dispositivo, separados de las copias de seguridad editables.</li>
+    </ul>
+    <p>No hay publicidad, identificadores publicitarios, analítica ni seguimiento entre aplicaciones. Las notificaciones, el widget y la pantalla bloqueada pueden mostrar el nombre o la imagen de tu compañero; puedes cambiarlo en Ajustes de iOS.</p>
+  </section>
+  <section id="chat">
+    <h2>El chat con tu compañero</h2>
+    <p>Las respuestas se generan en tu iPhone: con Apple Intelligence cuando está disponible y, si no, con una guía local. Tus mensajes no se envían a ningún servidor. Para explicar tu progreso, el chat puede usar datos agregados de las apps elegidas, sesiones, noches, puntos, número de entradas del diario y promedio de ánimo. No recibe los nombres de las apps ni el texto de las notas del diario. Si activas la memoria del chat, puedes verla, editarla o borrarla.</p>
+    <p>El chat puede equivocarse. Quitok es una herramienta de bienestar digital, no un servicio médico ni de emergencias.</p>
+  </section>
+  <section id="compartir">
+    <h2>Lo que sale del iPhone solo si tú lo decides</h2>
+    <ul>
+      <li><strong>Copia de seguridad</strong> (Ajustes): un archivo legible con tu perfil, diario, sesiones, conversación, plan y preferencias, incluida la memoria del chat si la has activado. Tú eliges dónde guardarlo o a quién enviarlo; guárdalo en un lugar privado. No incluye permisos, el estado de la protección ni créditos de compra.</li>
+      <li><strong>Informe de diagnóstico</strong> (Ajustes): texto técnico con los eventos de la protección y las versiones de la app y de iOS, por si quieres enviarlo para resolver un problema.</li>
+    </ul>
+    <p>Una copia que hayas compartido queda bajo el control de quien la recibe. Borrar Quitok no la elimina de allí.</p>
+  </section>
+  <section id="grupos">
+    <h2>Grupos de amigos (opcional)</h2>
+    <p>Si creas una cuenta para competir en grupos, el servidor de Quitok (Supabase, en la Unión Europea) guarda:</p>
+    <ul>
+      <li><strong>Tu cuenta:</strong> email y contraseña (cifrada por el servicio de autenticación), nombre de usuario y mes y año de nacimiento, solo para comprobar que tienes 14 años o más.</li>
+      <li><strong>Cómo apareces:</strong> tu compañero con su fase y accesorio, o tu paisaje si usas Quitok sin mascota.</li>
+      <li><strong>Minutos por día</strong> de lo que mide cada grupo (todo el móvil o las categorías acordadas) y los resultados semanales. Nunca qué apps usas: iOS no se lo muestra a Quitok.</li>
+      <li><strong>Lo que escribes en el grupo:</strong> mensajes del chat (solo texto, se borran a los 30 días), propuestas de pacto y tus respuestas.</li>
+      <li><strong>Avisos:</strong> el identificador de notificaciones de tu iPhone y tus horas de descanso (noche y concentración), para no avisarte en esos momentos.</li>
+      <li><strong>Seguridad:</strong> denuncias y bloqueos. Las denuncias las revisa el responsable en menos de 24 horas y pueden terminar en ocultar un mensaje, expulsar de un grupo o suspender una cuenta.</li>
+    </ul>
+    <p>Solo los miembros de tu grupo ven tu nombre de usuario, tu avatar, tus minutos y tus mensajes. No hay grupos públicos, buscador ni mensajes privados. Se entra solo con un código de invitación.</p>
+    <p>Puedes salir de un grupo en cualquier momento y <strong>borrar tu cuenta</strong> desde Ajustes › Grupos: se eliminan del servidor tu perfil, tus minutos, tus mensajes y tus pactos. La base legal es el consentimiento que das al crear la cuenta; puedes retirarlo borrándola.</p>
+  </section>
+  <section id="control">
+    <h2>Tus opciones</h2>
+    <p><strong>Ajustes › Volver a empezar</strong> borra, con confirmación en dos pasos, el perfil, el historial y las preferencias de Quitok, y detiene la protección, los recordatorios y las actividades en directo. Los créditos comprados para cambiar de compañero se conservan en el llavero de este dispositivo. Al borrar la app se eliminan sus datos de uso; los datos del llavero pueden permanecer en el dispositivo.</p>
+    <p>Puedes retirar los permisos de Tiempo de uso y de notificaciones en Ajustes de iOS en cualquier momento.</p>
+    <p>Fuera de los grupos, Quitok no recibe tus datos, así que no puede consultarlos ni borrarlos por ti: están solo en tu dispositivo. Para los datos de los grupos puedes pedir acceso, rectificación o borrado al contacto indicado arriba, o borrar la cuenta tú mismo. Si tienes dudas, escribe al contacto. En España puedes reclamar ante la <a href="https://www.aepd.es/">Agencia Española de Protección de Datos</a>.</p>
+  </section>
+  <section id="menores">
+    <h2>Edad</h2>
+    <p>La edad es opcional para usar Quitok y no cambia sus funciones. Los grupos de amigos piden mes y año de nacimiento y solo están disponibles a partir de 14 años, la edad a la que en España se puede consentir el tratamiento de los propios datos. La clasificación de la App Store y los controles de Tiempo de uso de Apple no sustituyen el acompañamiento de las familias.</p>
+  </section>
+  <section id="cambios">
+    <h2>Si cambia esta política</h2>
+    <p>Publicaremos la nueva versión con su fecha. Si una versión futura envía datos fuera del iPhone, lo explicará aquí y pedirá tu permiso antes.</p>
+  </section>
+</main>
+<footer>Quitok · Una app para recuperar tiempo. Esta página no usa cookies, analítica ni recursos de terceros. El servicio donde se aloje puede guardar sus propios registros técnicos.</footer>
+</body>
+</html>
